@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'RYAngelWalker_Example' do
+  pod 'RYAngelWalker', :path => '../'
+
+  target 'RYAngelWalker_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
