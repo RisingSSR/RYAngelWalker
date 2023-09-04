@@ -1,0 +1,6 @@
+framework module RYAngelWalker {
+  umbrella header "RYAngelWalker-umbrella.h"
+
+  export *
+  module * { export * }
+}

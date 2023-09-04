@@ -1,0 +1,16 @@
+PODS:
+  - RYAngelWalker (0.1.0)
+
+DEPENDENCIES:
+  - RYAngelWalker (from `../`)
+
+EXTERNAL SOURCES:
+  RYAngelWalker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RYAngelWalker: 59d71757e1ea44f0b23af59c1cc7f757cdc026fc
+
+PODFILE CHECKSUM: ab14a7a7310dc630f70bd18e10d56c7a0cdec7fd
+
+COCOAPODS: 1.12.1
