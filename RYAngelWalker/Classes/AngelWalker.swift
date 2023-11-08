@@ -41,12 +41,6 @@ open class AngelWalker: UIView {
         self.init(contentWidth: 100)
     }
     
-    deinit {
-        timer.setEventHandler { }
-        timer.setCancelHandler { }
-        timer.cancel()
-    }
-    
     public init(contentWidth: CGFloat) {
         super.init(frame: CGRect(x: 0, y: 0, width: contentWidth, height: 0))
         commitInit()
