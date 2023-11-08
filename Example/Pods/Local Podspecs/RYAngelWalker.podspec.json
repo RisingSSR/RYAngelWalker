@@ -1,8 +1,7 @@
 {
   "name": "RYAngelWalker",
   "version": "0.1.0",
-  "summary": "A short description of RYAngelWalker.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "RYAngelWalker 跑马灯效果 Swift",
   "homepage": "https://github.com/RisingSSR/RYAngelWalker",
   "license": {
     "type": "MIT",
@@ -16,13 +15,13 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "11.0"
   },
   "source_files": "RYAngelWalker/Classes/**/*.swift",
   "frameworks": [
     "UIKit",
     "Foundation"
   ],
-  "swift_versions": "5.0",
-  "swift_version": "5.0"
+  "swift_versions": "4.8",
+  "swift_version": "4.8"
 }

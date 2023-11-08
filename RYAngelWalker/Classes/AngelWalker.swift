@@ -2,15 +2,15 @@
 //  AngelWalker.swift
 //  RYAngelWalker
 //
-//  Created by SSR on 2023/9/3.
+//  Created by SSR on 2023/11/7.
 //
 
 import UIKit
 
 open class AngelWalker: UIView {
-    
-    public typealias AngelWalker_P0_Block = () -> ()
 
+    public typealias AngelWalker_P0_Block = () -> ()
+    
     public enum WalkerType {
         
         case `default`  // from right to left
@@ -18,251 +18,168 @@ open class AngelWalker: UIView {
         case descend    // from top to bottom
     }
     
-    // MARK: property
+    var walkerType: WalkerType = .default
     
-    open var backgroundImage: UIImage? = nil {
-        didSet {
-            backgroundImageView.image = backgroundImage
-        }
+    var spaceBetweenItems: CGFloat = 20
+    
+    var parkingTimeOfWalker: TimeInterval = 2
+    
+    var animateTimeIntervalPer100Move: TimeInterval = 2
+    
+    var duration: TimeInterval {
+        (copyWalkerView?.frame.minX ?? 0) / 100.0 * animateTimeIntervalPer100Move
     }
     
-    open var duration: TimeInterval = 1
-    
-    open var pause: TimeInterval = 0
-    
-    open var type: WalkerType = .default
-    
-    open var walerView: UIView? = nil
-    
-    open private(set) lazy var contentView: UIView = {
-        let contentView = UIView(frame: bounds)
-        contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        contentView.clipsToBounds = true
-        contentView.backgroundColor = .clear
-        return contentView
-    }()
-    
-    open var leftView: UIView? = nil {
-        didSet {
-            oldValue?.removeFromSuperview()
-            if let leftView {
-                let leftSize = leftView.frame.size
-                leftView.frame = CGRect(x: 0, y: (aSize.height - leftSize.height) / 2, width: leftSize.width, height: leftSize.height)
-                addSubview(leftView)
-                updateContentFrame()
-            }
-        }
+    public var contentWidth: CGFloat {
+        set { frame.size.width = newValue }
+        get { bounds.width }
     }
-    
-    open var rightView: UIView? = nil {
-        didSet {
-            oldValue?.removeFromSuperview()
-            if let rightView {
-                let rightSize = rightView.frame.size
-                rightView.frame = CGRect(x: aSize.width - rightSize.width, y: (aSize.height - rightSize.height) / 2, width: rightSize.width, height: rightSize.height)
-                addSubview(rightView)
-                updateContentFrame()
-            }
-        }
-    }
-    
-    open var isWalking: Bool = false
-    
-    open var `repeat`: Bool = false
-    
-    // MARK: private
-    
-    private lazy var backgroundImageView: UIImageView = {
-        let imgView = UIImageView(frame: bounds)
-        imgView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        imgView.isUserInteractionEnabled = true
-        return imgView
-    }()
-
-    private var aSize: CGSize = .zero
-    
-    private var wSize: CGSize = .zero
-    
-    private var frameBegin: CGRect = .zero
-    
-    private var frame1: CGRect = .zero
-    
-    private var frame2: CGRect = .zero
-    
-    private var frameEnd: CGRect = .zero
-    
-    private var finishedBlock: AngelWalker_P0_Block? = nil
-    
-    private var startBlock: AngelWalker_P0_Block? = nil
     
     // MARK: init
     
-    public override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupContentView()
+    private convenience init() {
+        self.init(contentWidth: 100)
+    }
+    
+    deinit {
+        timer.setEventHandler { }
+        timer.setCancelHandler { }
+        timer.cancel()
+    }
+    
+    public init(contentWidth: CGFloat) {
+        super.init(frame: CGRect(x: 0, y: 0, width: contentWidth, height: 0))
+        commitInit()
     }
     
     required public init?(coder: NSCoder) {
         super.init(coder: coder)
-        setupContentView()
+        commitInit()
     }
     
-    private func setupContentView() {
-        addSubview(backgroundImageView)
-        addSubview(contentView)
+    open override func encode(with coder: NSCoder) {
+        super.encode(with: coder)
+        commitInit()
     }
     
-    // MARK: Method
-    
-    open func add(walkerView: UIView) {
-        self.walerView?.removeFromSuperview()
-        self.walerView = walkerView
-        updateWalerViewsFrame()
-        contentView.addSubview(walkerView)
+    open override func sizeThatFits(_ size: CGSize) -> CGSize {
+        var size = super.sizeThatFits(size)
+        if let value = walkerView {
+            size.height = value.bounds.height
+        }
+        return size
     }
     
-    open func walkStart(complication: @escaping AngelWalker_P0_Block) {
-        startBlock = complication
+    func commitInit() {
+        super.addSubview(contentView)
     }
     
-    open func walkFinished(complication: @escaping AngelWalker_P0_Block) {
-        finishedBlock = complication
+    // MARK: override
+    
+    open override func addSubview(_ view: UIView) {
+        contentView.addSubview(view)
     }
     
-    internal func updateWalerViewsFrame() {
-        wSize = walerView?.frame.size ?? .zero
+    // MARK: property
+    
+    lazy var contentView: UIView = {
+        let contentView = UIView(frame: bounds)
+        contentView.backgroundColor = .clear
+        contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        contentView.clipsToBounds = true
+        return contentView
+    }()
+    
+    lazy var timer: DispatchSourceTimer = {
+        let queue = DispatchQueue.global(qos: .default)
+        return DispatchSource.makeTimerSource(queue: queue)
+    }()
+    
+    var walkerView: UIView? {
+        didSet {
+            oldValue?.removeFromSuperview()
+            copyWalkerView?.removeFromSuperview()
+            if let newValue = walkerView, 
+                let newCopyValue = copyByKeyedArchiver(newValue) {
+                copyWalkerView = newCopyValue
+                addSubview(newValue)
+                addSubview(newCopyValue)
+                updateContentFrame()
+            }
+        }
     }
     
-    private func updateContentFrame() {
-        contentView.frame = CGRect(x: leftView?.frame.maxX ?? 0, y: 0, width: aSize.width - (leftView?.frame.width ?? 0), height: aSize.height)
+    private var copyWalkerView: UIView?
+    
+    private var walkIfLongerThanSelf: Bool = true
+    
+    // MARK: method
+    
+    func updateContentFrame() {
+        if let value = walkerView, let copyValue = copyWalkerView {
+            value.frame.origin = CGPoint(x: 0, y: 0)
+            frame.size.height = value.bounds.height
+            switch walkerType {
+            case .default:
+                let maxWidth = max(bounds.width, value.frame.maxX + spaceBetweenItems)
+                copyValue.frame.origin = CGPoint(x: maxWidth, y: 0)
+            case .descend:
+                copyValue.frame.origin = CGPoint(x: 0, y: bounds.height)
+            }
+        }
     }
     
-    // MARK: life
-    
-    open func walk() {
-        if isWalking { return }
-        calculate()
-        addAnimations()
-    }
-    
-    open func stop() {
-        walerView?.layer.removeAllAnimations()
-        walerView?.frame = frameBegin
-        isWalking = false
-    }
-    
-    private func calculate() {
-        switch type {
-            
+    func animateAnimations() {
+        guard let walkerView = walkerView,
+                let copyWalkerView = copyWalkerView else { return }
+        switch walkerType {
         case .default:
-            let y: CGFloat = 0
-            frameBegin = CGRect(x: 0, y: y, width: wSize.width, height: wSize.height)
-            frame1 = CGRect(x: -wSize.width, y: y, width: wSize.width, height: wSize.height)
-            frame2 = CGRect(x: contentView.frame.width, y: y, width: wSize.width, height: wSize.height)
-            frameEnd = CGRect(x: 0, y: y, width: wSize.width, height: wSize.height)
-            
+            walkerView.frame.origin = CGPoint(x: -copyWalkerView.frame.minX, y: 0)
+            copyWalkerView.frame.origin = CGPoint(x: 0, y: 0)
         case .descend:
-            frameBegin = CGRect(x: 0, y: -wSize.height, width: wSize.width, height: wSize.height)
-            frame1 = CGRect(x: 0, y: (aSize.height - wSize.height) / 2, width: wSize.width, height: wSize.height)
-            if wSize.width > contentView.frame.width {
-                frame2 = CGRect(x: -(wSize.width - contentView.frame.width), y: frame1.minY, width: wSize.width, height: wSize.height)
-            } else {
-                frame2 = frame1
-            }
-            frameEnd = CGRect(x: frame2.minX, y: aSize.height, width: wSize.width, height: wSize.height)
-        }
-    }
-        
-    private func addAnimations() {
-        stop()
-        isHidden = false
-        
-        if type == .default && wSize.width < contentView.frame.width { return }
-        
-        isWalking = true
-        startBlock?()
-        
-        var velocity = duration
-        
-        switch type {
-            
-        case .default:
-            velocity = frameBegin.origin.x - frame1.origin.x / duration
-            addDefualtAnimation(velocity: velocity)
-            
-        case .descend:
-            velocity = frame1.origin.y - frameBegin.origin.y / duration
+            walkerView.frame.origin = CGPoint(x: 0, y: -walkerView.bounds.height)
+            copyWalkerView.frame.origin = CGPoint(x: 0, y: 0)
         }
     }
     
-    private func addDefualtAnimation(velocity: CGFloat) {
-        let trueDuration = wSize.width / (contentView.frame.width / duration)
-        UIView.animate(withDuration: trueDuration, delay: pause, options: .curveLinear) { [weak self] in
-            guard let self else { return }
-            self.walerView?.frame = self.frame1
-        } completion: { [weak self] finished in
-            guard let self else { return }
-            if finished {
-                self.walerView?.frame = self.frame2
-                UIView.animate(withDuration: self.duration, delay: 0, options: .curveLinear) { [weak self] in
-                    guard let self else { return }
-                    self.walerView?.frame = self.frameEnd
-                } completion: { [weak self] finished in
-                    guard let self else { return }
-                    self.stop()
-                    if finished {
-                        self.finishedBlock?()
-                        if self.repeat {
-                            self.addAnimations()
-                        }
-                    }
+    func animateCompletion() {
+        updateContentFrame()
+    }
+    
+    open func walk(ifLongerThanSelf: Bool = true) {
+        if ifLongerThanSelf {
+            guard let walkerView = walkerView, bounds.width < walkerView.bounds.width else {
+                return
+            }
+        }
+        
+        timer.setEventHandler { [weak self] in
+            guard let self = self else { return }
+            DispatchQueue.main.async {
+                UIView.animate(withDuration: self.duration) {
+                    self.animateAnimations()
+                } completion: { _ in
+                    self.animateCompletion()
+                    self.resume()
                 }
-            } else {
-                self.stop()
             }
         }
+        
+        resume()
     }
     
-    private func addDescendAnimation(velocity: CGFloat) {
-        UIView.animate(withDuration: duration, delay: 0) { [weak self] in
-            guard let self else { return }
-            self.walerView?.frame = self.frame1
-        } completion: { [weak self] finished in
-            guard let self else { return }
-            if finished {
-                if self.wSize.width > self.contentView.frame.width {
-                    UIView.animate(withDuration: (self.frame1.size.width - self.contentView.frame.width) / velocity, delay: self.pause) { [weak self] in
-                        guard let self else { return }
-                        self.walerView?.frame = self.frame2
-                    } completion: { [weak self] finished in
-                        guard let self else { return }
-                        self.stop()
-                        if finished {
-                            self.finishedBlock?()
-                            if self.repeat {
-                                self.addAnimations()
-                            }
-                        }
-                    }
-                } else {
-                    UIView.animate(withDuration: self.duration, delay: self.pause) { [weak self] in
-                        guard let self else { return }
-                        self.walerView?.frame = self.frameEnd
-                    } completion: { [weak self] finished in
-                        guard let self else { return }
-                        self.stop()
-                        if finished {
-                            self.finishedBlock?()
-                            if self.repeat {
-                                self.addAnimations()
-                            }
-                        }
-                    }
-                }
-            } else {
-                self.stop()
-            }
-        }
+    func resume() {
+        timer.schedule(deadline: .now() + parkingTimeOfWalker, repeating: .infinity)
+        timer.activate()
     }
-    
+}
+
+private func copyByKeyedArchiver<T>(_ copyFrom: T) -> T? where T: NSCoding {
+    let requiringSecureCoding = copyFrom is NSSecureCoding
+    let archiver = NSKeyedArchiver(requiringSecureCoding: requiringSecureCoding)
+    archiver.encode(copyFrom, forKey: "ry_copyed")
+    let data = archiver.encodedData
+    let unArchiver = try? NSKeyedUnarchiver(forReadingFrom: data)
+    unArchiver?.requiresSecureCoding = requiringSecureCoding
+    return unArchiver?.decodeObject(forKey: "ry_copyed") as? T
 }

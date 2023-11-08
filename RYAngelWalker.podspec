@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RYAngelWalker'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'RYAngelWalker 跑马灯效果 Swift'
 
   s.homepage         = 'https://github.com/RisingSSR/RYAngelWalker'
@@ -16,10 +16,10 @@ Pod::Spec.new do |s|
   s.author           = { 'RisingSSR' => '2769119954@qq.com' }
   s.source           = { :git => 'https://github.com/RisingSSR/RYAngelWalker.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'RYAngelWalker/Classes/**/*.swift'
 
   s.frameworks       = 'UIKit', 'Foundation'
-  s.swift_version    = '5.0'
+  s.swift_version    = '4.8'
 end

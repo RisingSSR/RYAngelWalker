@@ -7,30 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BC9B32CFA0867C6F3392BA5C50729E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		1FF8B343F54A61DA7FEC847C97DC9717 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
 		2DA0B4C2D67D0AAD9E74E39DAC42DE6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		47F26844031029A68BA39480608F9F48 /* Pods-RYAngelWalker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F79E77719000F1B06CA13104A70B5ED /* Pods-RYAngelWalker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		519E1B0E67932B99C3613D996A7B8F2B /* AngelWalker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE51DBE37224FB05253EB4C8AB7B293A /* AngelWalker.swift */; };
-		6220AC9A8F61A5A12B6C98F47E88184E /* RYAngelWalker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB20BA43A8B8C97836FAE472668E2E38 /* RYAngelWalker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		548A5768A7A3196DF13C24857E58F6E4 /* RYAngelWalker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6890990AD725F1EB2D17EDD7EF3DA482 /* RYAngelWalker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA016F6C214DCD4401506A752D46D331 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		B40D3FC9D6F571E644EE26B59201B8D2 /* Pods-RYAngelWalker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12FD07EC0104A906DCCEB66ACF59975D /* Pods-RYAngelWalker_Tests-dummy.m */; };
-		B45D15C907D3E769DA60A39BFE8CFF6C /* TrotingAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C18E0465F9BF41FA96C9AA1F6D8DCDB /* TrotingAttribute.swift */; };
+		B7C2D84D114DB4BC04BD6755E9EF7BFA /* TrotingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6B5974BA03A6887F4EA05F2B1D67D7 /* TrotingLabel.swift */; };
 		BDDD4F2525791FE254662793AA0F0256 /* Pods-RYAngelWalker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9282F44B662938BDD53AEF633D6D48F7 /* Pods-RYAngelWalker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CFF07D2BE3568D7748C9B0E5E774D9D7 /* TrotingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A29031A9F68CC313D8188255F5D7A /* TrotingLabel.swift */; };
+		C333F21C602DEB0EDD1997B63F1A61CE /* RYAngelWalker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFEAEF0451BBFB2A368100996453551 /* RYAngelWalker-dummy.m */; };
+		C9893304825BCC7A124A89C62CEE51AD /* AngelWalker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813A4E8F6926CF3784E060E4FB743BF7 /* AngelWalker.swift */; };
+		D9AC7EFBEC7D668456ED28C916F063E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		E5D8D037384FDF51F8B4A898754891E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		EC812CEDEA553F047A2396375D711C75 /* Pods-RYAngelWalker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDAE99CC3EDAF94CCC0F018A45689A81 /* Pods-RYAngelWalker_Example-dummy.m */; };
-		F9D944FD716D26E124CE650935E8495A /* RYAngelWalker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF4BBD2BBA5CF345A523DCCCA3E31D5 /* RYAngelWalker-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		22956B27A3C848EA653AD8435771AE15 /* PBXContainerItemProxy */ = {
+		8789AC05DEB8A6CBF3CEE8A29F1D3DA1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 564B4E1257C3DD1F6AE9EAAC763BC8D4;
 			remoteInfo = "Pods-RYAngelWalker_Example";
 		};
-		BD5259246E1BA7002EAD95614D0E34F0 /* PBXContainerItemProxy */ = {
+		879886CA765C6F33CFD076A975D6F651 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -42,38 +41,37 @@
 /* Begin PBXFileReference section */
 		0142F99AE34E5CB92849C7E2DCB40B28 /* Pods-RYAngelWalker_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RYAngelWalker_Tests-Info.plist"; sourceTree = "<group>"; };
 		12FD07EC0104A906DCCEB66ACF59975D /* Pods-RYAngelWalker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RYAngelWalker_Tests-dummy.m"; sourceTree = "<group>"; };
+		16A7875F82D43FDFFA369DCE9AD9DB0F /* RYAngelWalker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RYAngelWalker.modulemap; sourceTree = "<group>"; };
+		176E33F335D1617C848CD706365EE836 /* RYAngelWalker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RYAngelWalker.debug.xcconfig; sourceTree = "<group>"; };
+		2948F9B8882612AC053DC97F63E029E1 /* RYAngelWalker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RYAngelWalker.release.xcconfig; sourceTree = "<group>"; };
 		3E6550AEF84E12E6D0193EA29153D030 /* Pods-RYAngelWalker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RYAngelWalker_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		439FD1BFBCBE5CCD74B4FECB78E38841 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		4CA3CE9132BB8C336E42F9640202165B /* Pods-RYAngelWalker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RYAngelWalker_Example-frameworks.sh"; sourceTree = "<group>"; };
-		4DC2EF04B357078BD6ABCA2380D90460 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		5906D5ED4753FE225E55FE12A87069A2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		5C18E0465F9BF41FA96C9AA1F6D8DCDB /* TrotingAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrotingAttribute.swift; path = RYAngelWalker/Classes/TrotingAttribute.swift; sourceTree = "<group>"; };
-		72A988FFC5845A25DA3856DC2C38E88E /* RYAngelWalker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RYAngelWalker-Info.plist"; sourceTree = "<group>"; };
+		6890990AD725F1EB2D17EDD7EF3DA482 /* RYAngelWalker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RYAngelWalker-umbrella.h"; sourceTree = "<group>"; };
 		7F79E77719000F1B06CA13104A70B5ED /* Pods-RYAngelWalker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RYAngelWalker_Example-umbrella.h"; sourceTree = "<group>"; };
-		8198D80611510E1540634E3F8709CFB7 /* RYAngelWalker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = RYAngelWalker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		813A4E8F6926CF3784E060E4FB743BF7 /* AngelWalker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AngelWalker.swift; path = RYAngelWalker/Classes/AngelWalker.swift; sourceTree = "<group>"; };
+		829A34D89C0F91A1B84681745A851C58 /* RYAngelWalker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RYAngelWalker-Info.plist"; sourceTree = "<group>"; };
+		8EFEAEF0451BBFB2A368100996453551 /* RYAngelWalker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RYAngelWalker-dummy.m"; sourceTree = "<group>"; };
 		9282F44B662938BDD53AEF633D6D48F7 /* Pods-RYAngelWalker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RYAngelWalker_Tests-umbrella.h"; sourceTree = "<group>"; };
 		9675507AFC5CE7E3C44E6CBB6F836DBF /* Pods-RYAngelWalker_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-RYAngelWalker_Example"; path = Pods_RYAngelWalker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E59C44AC0E452F655CA67CEF00909BB /* RYAngelWalker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RYAngelWalker.modulemap; sourceTree = "<group>"; };
+		A04D9FC57B098F780E767F0FA36FB30A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		A142A21EA184E597DB0BB39769FF3048 /* Pods-RYAngelWalker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RYAngelWalker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A9181A0E2ED858C1BB3C13AE7DA0E760 /* Pods-RYAngelWalker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RYAngelWalker_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		AC5A29031A9F68CC313D8188255F5D7A /* TrotingLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrotingLabel.swift; path = RYAngelWalker/Classes/TrotingLabel.swift; sourceTree = "<group>"; };
-		B0615FF8DF739BC4088D474B20B086DC /* RYAngelWalker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RYAngelWalker.release.xcconfig; sourceTree = "<group>"; };
 		B4A266FC090B93354FB67C39DDD2FA10 /* Pods-RYAngelWalker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RYAngelWalker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B5B79300954E7D5A4A49E41B5F2FCFA9 /* Pods-RYAngelWalker_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RYAngelWalker_Example-Info.plist"; sourceTree = "<group>"; };
 		B70C50925161086EEEF961B975671498 /* Pods-RYAngelWalker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RYAngelWalker_Tests.modulemap"; sourceTree = "<group>"; };
 		C1D54CBD3307AC699162A9373F763DA8 /* Pods-RYAngelWalker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RYAngelWalker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		CA6F70CF833255DD631E1F94B65A4180 /* Pods-RYAngelWalker_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-RYAngelWalker_Tests"; path = Pods_RYAngelWalker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		D6474F8EED6FE663A9D98E0C48DD97B6 /* RYAngelWalker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RYAngelWalker-prefix.pch"; sourceTree = "<group>"; };
 		D951A7EF6CD6E2F6D69EA1FDA4A05B10 /* RYAngelWalker */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RYAngelWalker; path = RYAngelWalker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA78CE8AC3D804366D13C0E4B6B0DF5 /* Pods-RYAngelWalker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RYAngelWalker_Example.release.xcconfig"; sourceTree = "<group>"; };
-		DBF4BBD2BBA5CF345A523DCCCA3E31D5 /* RYAngelWalker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RYAngelWalker-dummy.m"; sourceTree = "<group>"; };
-		DE51DBE37224FB05253EB4C8AB7B293A /* AngelWalker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AngelWalker.swift; path = RYAngelWalker/Classes/AngelWalker.swift; sourceTree = "<group>"; };
 		DF57E19D6ED8AEE80C2606993C3F8105 /* Pods-RYAngelWalker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RYAngelWalker_Example.modulemap"; sourceTree = "<group>"; };
-		E13D8D3D49FF8AAC0B13A6BDCF95B8C7 /* RYAngelWalker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RYAngelWalker.debug.xcconfig; sourceTree = "<group>"; };
 		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		EB20BA43A8B8C97836FAE472668E2E38 /* RYAngelWalker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RYAngelWalker-umbrella.h"; sourceTree = "<group>"; };
+		EBF4988F2830AB690A4F77291F92B1B7 /* RYAngelWalker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = RYAngelWalker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EE0C1B13D540555C977AF78B1B370B0E /* RYAngelWalker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RYAngelWalker-prefix.pch"; sourceTree = "<group>"; };
 		F4D052649C0D84D9BE95AA419B789C71 /* Pods-RYAngelWalker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RYAngelWalker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FA6B5974BA03A6887F4EA05F2B1D67D7 /* TrotingLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrotingLabel.swift; path = RYAngelWalker/Classes/TrotingLabel.swift; sourceTree = "<group>"; };
 		FB7C884A6F0348403977E3E950104EE1 /* Pods-RYAngelWalker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RYAngelWalker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FDAE99CC3EDAF94CCC0F018A45689A81 /* Pods-RYAngelWalker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RYAngelWalker_Example-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,37 +93,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DD435A8C3AE4BE903D7005D3A3A310B /* Frameworks */ = {
+		87B9EFBDE74806F602E59A3E11C9DD47 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BC9B32CFA0867C6F3392BA5C50729E2 /* Foundation.framework in Frameworks */,
-				1FF8B343F54A61DA7FEC847C97DC9717 /* UIKit.framework in Frameworks */,
+				E5D8D037384FDF51F8B4A898754891E4 /* Foundation.framework in Frameworks */,
+				D9AC7EFBEC7D668456ED28C916F063E3 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EBB3F3163E953628EEBAE492A4BA5D2 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2CAE095847B0AFDA221C02A70DB3CB9B /* RYAngelWalker */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2008603DD264B3C9B01C04C344BA89BB /* RYAngelWalker */ = {
-			isa = PBXGroup;
-			children = (
-				DE51DBE37224FB05253EB4C8AB7B293A /* AngelWalker.swift */,
-				5C18E0465F9BF41FA96C9AA1F6D8DCDB /* TrotingAttribute.swift */,
-				AC5A29031A9F68CC313D8188255F5D7A /* TrotingLabel.swift */,
-				91FA5A611D500DF608BC37145C6B4D5A /* Pod */,
-				3AB9797D303844A2402C98B97ADB8B06 /* Support Files */,
-			);
-			name = RYAngelWalker;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		213FC631318C12EBE432822A51CFF4A9 /* Targets Support Files */ = {
@@ -137,19 +130,16 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		3AB9797D303844A2402C98B97ADB8B06 /* Support Files */ = {
+		2CAE095847B0AFDA221C02A70DB3CB9B /* RYAngelWalker */ = {
 			isa = PBXGroup;
 			children = (
-				9E59C44AC0E452F655CA67CEF00909BB /* RYAngelWalker.modulemap */,
-				DBF4BBD2BBA5CF345A523DCCCA3E31D5 /* RYAngelWalker-dummy.m */,
-				72A988FFC5845A25DA3856DC2C38E88E /* RYAngelWalker-Info.plist */,
-				D6474F8EED6FE663A9D98E0C48DD97B6 /* RYAngelWalker-prefix.pch */,
-				EB20BA43A8B8C97836FAE472668E2E38 /* RYAngelWalker-umbrella.h */,
-				E13D8D3D49FF8AAC0B13A6BDCF95B8C7 /* RYAngelWalker.debug.xcconfig */,
-				B0615FF8DF739BC4088D474B20B086DC /* RYAngelWalker.release.xcconfig */,
+				813A4E8F6926CF3784E060E4FB743BF7 /* AngelWalker.swift */,
+				FA6B5974BA03A6887F4EA05F2B1D67D7 /* TrotingLabel.swift */,
+				751FDDDBF8E0114FEB3E51221B231F9B /* Pod */,
+				61E988B1F2717598D878034D5F73874D /* Support Files */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/RYAngelWalker";
+			name = RYAngelWalker;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		56D2FA56E5705317A7D9C0AE54372045 /* Pods-RYAngelWalker_Tests */ = {
@@ -177,6 +167,31 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		61E988B1F2717598D878034D5F73874D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				16A7875F82D43FDFFA369DCE9AD9DB0F /* RYAngelWalker.modulemap */,
+				8EFEAEF0451BBFB2A368100996453551 /* RYAngelWalker-dummy.m */,
+				829A34D89C0F91A1B84681745A851C58 /* RYAngelWalker-Info.plist */,
+				EE0C1B13D540555C977AF78B1B370B0E /* RYAngelWalker-prefix.pch */,
+				6890990AD725F1EB2D17EDD7EF3DA482 /* RYAngelWalker-umbrella.h */,
+				176E33F335D1617C848CD706365EE836 /* RYAngelWalker.debug.xcconfig */,
+				2948F9B8882612AC053DC97F63E029E1 /* RYAngelWalker.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/RYAngelWalker";
+			sourceTree = "<group>";
+		};
+		751FDDDBF8E0114FEB3E51221B231F9B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				439FD1BFBCBE5CCD74B4FECB78E38841 /* LICENSE */,
+				A04D9FC57B098F780E767F0FA36FB30A /* README.md */,
+				EBF4988F2830AB690A4F77291F92B1B7 /* RYAngelWalker.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		907C759035E99C0DF42CFE994DE9DDC1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,29 +202,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		91FA5A611D500DF608BC37145C6B4D5A /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				4DC2EF04B357078BD6ABCA2380D90460 /* LICENSE */,
-				5906D5ED4753FE225E55FE12A87069A2 /* README.md */,
-				8198D80611510E1540634E3F8709CFB7 /* RYAngelWalker.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		95FCCD558539ED5258D048D80B640CE1 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2008603DD264B3C9B01C04C344BA89BB /* RYAngelWalker */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				95FCCD558539ED5258D048D80B640CE1 /* Development Pods */,
+				0EBB3F3163E953628EEBAE492A4BA5D2 /* Development Pods */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
 				907C759035E99C0DF42CFE994DE9DDC1 /* Products */,
 				213FC631318C12EBE432822A51CFF4A9 /* Targets Support Files */,
@@ -252,11 +249,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D17C0D09A42CA78CB3D39620F7D0DBC8 /* Headers */ = {
+		C1208A4F1942ADF8A3220FE9CF88A35A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6220AC9A8F61A5A12B6C98F47E88184E /* RYAngelWalker-umbrella.h in Headers */,
+				548A5768A7A3196DF13C24857E58F6E4 /* RYAngelWalker-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +272,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				75F4BB9B2D3E46FC3A5B630947630AC4 /* PBXTargetDependency */,
+				51AC5D0B886483F8787012B0213C35D4 /* PBXTargetDependency */,
 			);
 			name = "Pods-RYAngelWalker_Example";
 			productName = Pods_RYAngelWalker_Example;
@@ -284,12 +281,12 @@
 		};
 		854120F276F5558840CCF951BD1E11CD /* RYAngelWalker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 96E84EB5732C6CD1D9D8842125734678 /* Build configuration list for PBXNativeTarget "RYAngelWalker" */;
+			buildConfigurationList = 7EBF0F5E2BF6A34BAE5E68DB485B96FD /* Build configuration list for PBXNativeTarget "RYAngelWalker" */;
 			buildPhases = (
-				D17C0D09A42CA78CB3D39620F7D0DBC8 /* Headers */,
-				BEA3921E2F1225C9B3066DE6E927C476 /* Sources */,
-				9DD435A8C3AE4BE903D7005D3A3A310B /* Frameworks */,
-				3E1360F4B3A7C1A3C23D8F4AA4CAA7FE /* Resources */,
+				C1208A4F1942ADF8A3220FE9CF88A35A /* Headers */,
+				EDD9D13C5D0A0D782C365867E05996B7 /* Sources */,
+				87B9EFBDE74806F602E59A3E11C9DD47 /* Frameworks */,
+				FF5D35CC7E8EF1FF9C203162E119D604 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -312,7 +309,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				B208A0459E5ECB2CC366A738C9B8E981 /* PBXTargetDependency */,
+				DA7F91B33D32C1AA815AF32DC9E1E526 /* PBXTargetDependency */,
 			);
 			name = "Pods-RYAngelWalker_Tests";
 			productName = Pods_RYAngelWalker_Tests;
@@ -349,13 +346,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3E1360F4B3A7C1A3C23D8F4AA4CAA7FE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		708AD001ECAB4B634ECA2EF7EAC1B12A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -364,6 +354,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		804C46334B2762B05EC95985F9D99CA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF5D35CC7E8EF1FF9C203162E119D604 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -381,17 +378,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BEA3921E2F1225C9B3066DE6E927C476 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				519E1B0E67932B99C3613D996A7B8F2B /* AngelWalker.swift in Sources */,
-				F9D944FD716D26E124CE650935E8495A /* RYAngelWalker-dummy.m in Sources */,
-				B45D15C907D3E769DA60A39BFE8CFF6C /* TrotingAttribute.swift in Sources */,
-				CFF07D2BE3568D7748C9B0E5E774D9D7 /* TrotingLabel.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D53F25D4FD32830F604C53937C7EBDB9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -400,29 +386,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EDD9D13C5D0A0D782C365867E05996B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9893304825BCC7A124A89C62CEE51AD /* AngelWalker.swift in Sources */,
+				C333F21C602DEB0EDD1997B63F1A61CE /* RYAngelWalker-dummy.m in Sources */,
+				B7C2D84D114DB4BC04BD6755E9EF7BFA /* TrotingLabel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		75F4BB9B2D3E46FC3A5B630947630AC4 /* PBXTargetDependency */ = {
+		51AC5D0B886483F8787012B0213C35D4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RYAngelWalker;
 			target = 854120F276F5558840CCF951BD1E11CD /* RYAngelWalker */;
-			targetProxy = BD5259246E1BA7002EAD95614D0E34F0 /* PBXContainerItemProxy */;
+			targetProxy = 879886CA765C6F33CFD076A975D6F651 /* PBXContainerItemProxy */;
 		};
-		B208A0459E5ECB2CC366A738C9B8E981 /* PBXTargetDependency */ = {
+		DA7F91B33D32C1AA815AF32DC9E1E526 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-RYAngelWalker_Example";
 			target = 564B4E1257C3DD1F6AE9EAAC763BC8D4 /* Pods-RYAngelWalker_Example */;
-			targetProxy = 22956B27A3C848EA653AD8435771AE15 /* PBXContainerItemProxy */;
+			targetProxy = 8789AC05DEB8A6CBF3CEE8A29F1D3DA1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1718C75DA4913FC1B8E339B813955665 /* Release */ = {
+		113A94449A76C008E79CED90F2306BCB /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A9181A0E2ED858C1BB3C13AE7DA0E760 /* Pods-RYAngelWalker_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -433,7 +431,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-RYAngelWalker_Tests/Pods-RYAngelWalker_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-RYAngelWalker_Tests/Pods-RYAngelWalker_Tests.modulemap";
@@ -451,10 +449,13 @@
 			};
 			name = Release;
 		};
-		30FBE624F6B952DB112C96B7B8504F63 /* Debug */ = {
+		17427BE6F1874F6EE5A1D78B3DBCDB73 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E13D8D3D49FF8AAC0B13A6BDCF95B8C7 /* RYAngelWalker.debug.xcconfig */;
+			baseConfigurationReference = 3E6550AEF84E12E6D0193EA29153D030 /* Pods-RYAngelWalker_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -463,25 +464,60 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RYAngelWalker/RYAngelWalker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RYAngelWalker/RYAngelWalker-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-RYAngelWalker_Example/Pods-RYAngelWalker_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/RYAngelWalker/RYAngelWalker.modulemap";
-				PRODUCT_MODULE_NAME = RYAngelWalker;
-				PRODUCT_NAME = RYAngelWalker;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RYAngelWalker_Example/Pods-RYAngelWalker_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		6D42DC62C4F2E194221DF89C48496C98 /* Release */ = {
+		6ABA2CFE2A60509CA799969B2134D83C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A142A21EA184E597DB0BB39769FF3048 /* Pods-RYAngelWalker_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RYAngelWalker_Tests/Pods-RYAngelWalker_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RYAngelWalker_Tests/Pods-RYAngelWalker_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -531,7 +567,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -543,74 +579,12 @@
 			};
 			name = Release;
 		};
-		964977BA7615D9ED66EF57529EB1A118 /* Debug */ = {
+		A9950F5A5FDCAF1214B1CFEA28CC3C96 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E6550AEF84E12E6D0193EA29153D030 /* Pods-RYAngelWalker_Example.debug.xcconfig */;
+			baseConfigurationReference = 176E33F335D1617C848CD706365EE836 /* RYAngelWalker.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-RYAngelWalker_Example/Pods-RYAngelWalker_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RYAngelWalker_Example/Pods-RYAngelWalker_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A5268BDB0D4FFF83AECB7A00C5A35C59 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A142A21EA184E597DB0BB39769FF3048 /* Pods-RYAngelWalker_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-RYAngelWalker_Tests/Pods-RYAngelWalker_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RYAngelWalker_Tests/Pods-RYAngelWalker_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B7122F2767508E8A0964031355A1A3A5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0615FF8DF739BC4088D474B20B086DC /* RYAngelWalker.release.xcconfig */;
-			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -622,7 +596,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/RYAngelWalker/RYAngelWalker-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/RYAngelWalker/RYAngelWalker-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/RYAngelWalker/RYAngelWalker.modulemap";
 				PRODUCT_MODULE_NAME = RYAngelWalker;
@@ -630,15 +604,14 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.8;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		E4D0D44B090D4284607EBBC4E71A96C1 /* Debug */ = {
+		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -691,7 +664,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -704,11 +677,13 @@
 			};
 			name = Debug;
 		};
-		F6FCDA2E34F438B175AD4073ABE7E23F /* Release */ = {
+		D382DAA93A969AB51E955C967BDAA55B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DBA78CE8AC3D804366D13C0E4B6B0DF5 /* Pods-RYAngelWalker_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -719,7 +694,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-RYAngelWalker_Example/Pods-RYAngelWalker_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-RYAngelWalker_Example/Pods-RYAngelWalker_Example.modulemap";
@@ -737,14 +712,47 @@
 			};
 			name = Release;
 		};
+		F129982094653EE9B52EECF1BE0FBAEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2948F9B8882612AC053DC97F63E029E1 /* RYAngelWalker.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RYAngelWalker/RYAngelWalker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RYAngelWalker/RYAngelWalker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RYAngelWalker/RYAngelWalker.modulemap";
+				PRODUCT_MODULE_NAME = RYAngelWalker;
+				PRODUCT_NAME = RYAngelWalker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.8;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E4D0D44B090D4284607EBBC4E71A96C1 /* Debug */,
-				6D42DC62C4F2E194221DF89C48496C98 /* Release */,
+				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
+				903A0004D3E6651EFD5D2E16214D101B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -752,17 +760,17 @@
 		6D7949EA65E0FE12EAF6FC70F6CFE945 /* Build configuration list for PBXNativeTarget "Pods-RYAngelWalker_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A5268BDB0D4FFF83AECB7A00C5A35C59 /* Debug */,
-				1718C75DA4913FC1B8E339B813955665 /* Release */,
+				6ABA2CFE2A60509CA799969B2134D83C /* Debug */,
+				113A94449A76C008E79CED90F2306BCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		96E84EB5732C6CD1D9D8842125734678 /* Build configuration list for PBXNativeTarget "RYAngelWalker" */ = {
+		7EBF0F5E2BF6A34BAE5E68DB485B96FD /* Build configuration list for PBXNativeTarget "RYAngelWalker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				30FBE624F6B952DB112C96B7B8504F63 /* Debug */,
-				B7122F2767508E8A0964031355A1A3A5 /* Release */,
+				A9950F5A5FDCAF1214B1CFEA28CC3C96 /* Debug */,
+				F129982094653EE9B52EECF1BE0FBAEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -770,8 +778,8 @@
 		D6693B5ECA2C8257E90F320EEE1C3F9A /* Build configuration list for PBXNativeTarget "Pods-RYAngelWalker_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				964977BA7615D9ED66EF57529EB1A118 /* Debug */,
-				F6FCDA2E34F438B175AD4073ABE7E23F /* Release */,
+				17427BE6F1874F6EE5A1D78B3DBCDB73 /* Debug */,
+				D382DAA93A969AB51E955C967BDAA55B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

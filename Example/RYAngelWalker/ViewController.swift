@@ -18,12 +18,18 @@ class ViewController: UIViewController {
     }
     
     lazy var walkerLab: TrotingLabel = {
-        let lab = TrotingLabel(frame: CGRect(x: 10, y: 100, width: 111, height: 40))
-        lab.backgroundColor = .green
-        lab.font = .systemFont(ofSize: 18)
-        lab.textColor = .black
-        lab.pause = 2
-        lab.add("数据结构非常非常恶心，恶心到一定境界了")
+        let lab = TrotingLabel(contentWidth: 120)
+        lab.frame.origin = CGPoint(x: 10, y: 100)
+        lab.backgroundColor = .blue
+        lab.setup { alab in
+            alab.backgroundColor = .green
+            alab.font = .systemFont(ofSize: 18)
+            alab.textColor = .black
+            alab.text = "请求前非常非常非常长的文本"
+        }
+        
+        lab.walk()
+        
         return lab
     }()
 }
